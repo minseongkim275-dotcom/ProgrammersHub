@@ -36,14 +36,16 @@ class DynamicArray():
         tmp = self._A[self._n]
         self._A[self._n] = None
         return tmp
-    
-arr = DynamicArray()
-for i in range(10):
-    arr.append(i)
-    print(len(arr), arr._capacity)
-print(arr[3], arr[9])
-arr.pop()
-arr.pop()
-arr.pop()
-for i in range(10):
-    print(arr[i])
+
+
+if __name__ == '__main__':            
+    arr = DynamicArray()
+    for i in range(10):
+        arr.append(i)
+        print(len(arr), arr._capacity)
+    print(arr[3], arr[9])
+    arr.pop()
+    arr.pop()
+    arr.pop()
+    for i in range(7):
+        print(arr[i])
